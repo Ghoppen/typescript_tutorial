@@ -1,8 +1,13 @@
-function add(n1, n2) {
-    console.log(typeof number2);
-    return n1 + n2;
+function add(n1, n2, showResult, phrase) {
+    var sum = n1 + n2;
+    if (showResult) {
+        console.log(phrase + sum);
+    }
+    return sum;
 }
 var number1 = 5;
 var number2 = 2.8;
-var result = add(number1, number2);
+var printResult = true;
+var phrase = "Result is  ";
+var result = add(number1, number2, printResult, phrase);
 console.log(result);
